@@ -2,10 +2,18 @@
   "name": "hexo-site",
   "version": "0.0.0",
   "private": true,
+  "scripts": {
+    "start": "concurrently 'npm:watch' 'npm:serve'",
+    "generate": "hexo generate",
+    "watch": "hexo generate --watch",
+    "serve": "live-server public",
+    "deploy": "hexo deploy"
+  },
   "hexo": {
     "version": "3.8.0"
   },
   "dependencies": {
+    "concurrently": "^4.1.0",
     "hexo": "^3.7.0",
     "hexo-deployer-git": "^0.3.1",
     "hexo-generator-archive": "^0.1.5",
@@ -15,6 +23,7 @@
     "hexo-renderer-ejs": "^0.3.1",
     "hexo-renderer-marked": "^0.3.2",
     "hexo-renderer-stylus": "^0.3.3",
-    "hexo-server": "^0.3.1"
+    "hexo-server": "^0.3.1",
+    "live-server": "^1.2.1"
   }
 }
