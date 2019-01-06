@@ -5,17 +5,17 @@ tags:
 ---
 
 # Prasyarat
-1. Pengetahuan dan pengalaman tentang [dasar-dasar HTML](https://www.w3schools.com/html/html_basic.asp)
-2. Pengetahuan dan pengalaman tentang [Web Server](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_web_server)
-3. Pengetahuan dan pengalaman tentang [dasar-dasar Javascript](http://rachelnabors.com/javascript-for-designers/)
+1. Pengetahuan dan pengalaman tentang [dasar-dasar HTML][dasar-dasar-html]
+2. Pengetahuan dan pengalaman tentang [Web Server][what-is-web-server]
+3. Pengetahuan dan pengalaman tentang [dasar-dasar Javascript][dasar-dasar-javascript]
 
 # Tools
-1. [Visual Studio Code (ver 1.30.1)](https://code.visualstudio.com/)
-2. [Fenix Web Server (ver 2.0)](http://fenixwebserver.com/) or [live-server](https://www.npmjs.com/package/live-server)
+1. [Visual Studio Code (ver 1.30.1)][visual-studio-code]
+2. [Fenix Web Server (ver 2.0)][fenix-web-server] or [live-server][live-server]
 
 # Apa itu VueJS?
 
-VueJS posisinya seperti jQuery. Berfungsi sebagai DOM Manipulator.
+VueJS posisinya seperti [jQuery][jquery]. Berfungsi sebagai DOM Manipulator.
 Berbeda dengan jQuery, dimana jQuery merupakan library sedangkan VueJS adalah framework.
 
 Bertujuan untuk menyediakan fitur-fitur yang belum disediakan oleh vanilla javascript.
@@ -149,11 +149,11 @@ Di kondisi kode seperti inilah, VueJS bisa memberikan bentuk kode dari perspekti
 secara hasil atau tampilan di browser, keduanya menghasilkan output yang sama.
 perbedaannya terdapat pada kode yang dibuat. perhatikan saat kedua kode tersebut dibandingkan.
 
-![komparasi js dengan vuejs](js-vs-vuejs.png)
+<img src="{% asset_path js-vs-vuejs.png %}" alt="komparasi JS dengan VueJS">
 Secara jumlah baris menjadi lebih banyak. Tapi secara struktur pemograman, bagian-bagian dari kode tersebut terlihat lebih jelas. Kodenya menjadi lebih mudah dipahami.
 
 Dengan struktur yang baru ini, terdapat cara baca dari kode tersebut seperti gambar berikut.
-![cara baca vuejs](cara-baca-vuejs.png)
+<img src="{% asset_path cara-baca-vuejs.png %}" alt="Cara baca VueJS">
 Cara bacanya sebagai berikut:
 1. VueJS diminta untuk mengelola DOM element dengan id `app`.
   pemilihan DOM element dilakukan menggunakan CSS Selector, dalam hal ini `#app`. yang artinya, apapun yang ada di dalam element tersebut diperlakukan sebagai template.
@@ -165,3 +165,10 @@ Cara bacanya sebagai berikut:
 
 [html-templating]: https://colorlib.com/wp/top-templating-engines-for-javascript/
 [encapsulation]: https://www.thoughtco.com/data-encapsulation-2034263
+[dasar-dasar-html]: https://www.w3schools.com/html/html_basic.asp
+[what-is-web-server]: https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_web_server
+[dasar-dasar-javascript]: http://rachelnabors.com/javascript-for-designers/
+[visual-studio-code]: https://www.w3schools.com/html/html_basic.asp
+[fenix-web-server]: https://github.com/coreybutler/fenix
+[live-server]: https://www.npmjs.com/package/live-server
+[jquery]: https://jquery.com/ 
