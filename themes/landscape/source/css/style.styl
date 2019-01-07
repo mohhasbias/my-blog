@@ -35,6 +35,8 @@ body
   max-width: (column-width + gutter-width) * columns + gutter-width
   margin: 0 auto
   padding: 0 gutter-width
+  flex: 1
+  width: 100%
 
 .inner
   column(columns)
@@ -63,6 +65,8 @@ body
   transition: 0.2s ease-out
   z-index: 1
   background: color-background
+  display: flex
+  flex-direction: column
   .mobile-nav-on &
     left: mobile-nav-width
 
